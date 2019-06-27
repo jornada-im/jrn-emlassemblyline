@@ -1,0 +1,4 @@
+attributeName	code	definition
+cyl	4	4 cylinder engine
+cyl	6	6 cylinder engine
+cyl	8	8 cylinder engine

@@ -1,0 +1,8 @@
+keyword	keywordThesaurus
+atmospheric deposition	LTER Controlled Vocabulary
+wind	LTER Controlled Vocabulary
+Study308	Jornada thesaurus
+Conmod	Jornada thesaurus
+Jornada Basin LTER	
+aeolian	
+dust	

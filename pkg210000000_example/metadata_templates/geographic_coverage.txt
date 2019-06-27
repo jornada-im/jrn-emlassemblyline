@@ -1,0 +1,4 @@
+geographicDescription	northBoundingCoordinate	southBoundingCoordinate	eastBoundingCoordinate	westBoundingCoordinate
+Bounding box A	32.75215663	32.61123379	-106.601697	-106.844154
+Bounding box B	32.68957116	32.53118449	-106.5903632	-106.6846111
+Bounding box C	32.5427713	32.46722784	-106.7294433	-106.8514602

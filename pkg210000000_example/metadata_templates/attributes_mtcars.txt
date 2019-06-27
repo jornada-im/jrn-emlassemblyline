@@ -1,0 +1,6 @@
+attributeName	attributeDefinition	class	unit	dateTimeFormatString	missingValueCode	missingValueCodeExplanation
+type	Make and model of vehicle	character			NA	Missing value
+mpg	Miles per gallon. Probably should define custom unit here.	numeric	number		NA	Missing value
+wt	Weight of vehicle	numeric	ton		NA	Missing value
+cyl	Number of cylinders. Assigned as a categorical for testing.	categorical			NA	Missing value
+gear	Number of gears	numeric	number		NA	Missing value

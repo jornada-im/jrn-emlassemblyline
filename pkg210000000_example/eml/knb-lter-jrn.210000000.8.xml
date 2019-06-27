@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.1" packageId="knb-lter-jrn.210000000.8" xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1  http://nis.lternet.edu/schemas/EML/eml-2.1.1/eml.xsd" system="edi">
+  <access authSystem="https://pasta.edirepository.org/authentication" order="allowFirst" scope="document">
+    <allow>
+      <principal>uid=JRN,o=LTER,dc=ecoinformatics,dc=org</principal>
+      <permission>all</permission>
+    </allow>
+    <allow>
+      <principal>public</principal>
+      <permission>read</permission>
+    </allow>
+  </access>
+  <dataset>
+    <title>Example data package for testing emlassemblyline (mtcars)</title>
+    <creator>
+      <individualName>
+        <givenName>Scooter</givenName>
+        <givenName>S</givenName>
+        <surName>Shooter</surName>
+      </individualName>
+      <organizationName>UCLC</organizationName>
+      <userId directory="https://orcid.org">https://orcid.org/0000-0002-0484-3537</userId>
+    </creator>
+    <pubDate>2019-06-26</pubDate>
+    <abstract>
+      <para>
+  This is an example abstract. It is very short.
+</para>
+    </abstract>
+    <keywordSet>
+      <keyword>atmospheric deposition</keyword>
+      <keyword>wind</keyword>
+      <keywordThesaurus>LTER Controlled Vocabulary</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword>Study308</keyword>
+      <keyword>Conmod</keyword>
+      <keywordThesaurus>Jornada thesaurus</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword>Jornada Basin LTER</keyword>
+      <keyword>aeolian</keyword>
+      <keyword>dust</keyword>
+    </keywordSet>
+    <additionalInfo>
+      <para>
+  This additional info is only an example.
+</para>
+    </additionalInfo>
+    <intellectualRights>
+      <para>
+  This information is released under the Creative Commons license -
+  Attribution - CC BY (https://creativecommons.org/licenses/by/4.0/).
+  The consumer of these data ("Data User" herein) is
+  required to cite it appropriately in any publication that results from
+  its use. The Data User should realize that these data may be actively
+  used by others for ongoing research and that coordination may be
+  necessary to prevent duplicate publication. The Data User is urged to
+  contact the authors of these data if any questions about methodology
+  or results occur. Where appropriate, the Data User is encouraged to
+  consider collaboration or co-authorship with the authors. The Data
+  User should realize that misinterpretation of data may occur if used
+  out of context of the original study. While substantial efforts are
+  made to ensure the accuracy of data and associated documentation,
+  complete accuracy of data sets cannot be guaranteed. All data are made
+  available "as is". The Data User should be aware,
+  however, that data are updated periodically and it is the
+  responsibility of the Data User to check for new versions of the data.
+  The data authors and the repository where these data were obtained
+  shall not be liable for damages resulting from any use or
+  misinterpretation of the data. Thank you.
+</para>
+    </intellectualRights>
+    <coverage>
+      <geographicCoverage>
+        <geographicDescription>Bounding box A</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-106.844154</westBoundingCoordinate>
+          <eastBoundingCoordinate>-106.601697</eastBoundingCoordinate>
+          <northBoundingCoordinate>32.75215663</northBoundingCoordinate>
+          <southBoundingCoordinate>32.61123379</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>Bounding box B</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-106.6846111</westBoundingCoordinate>
+          <eastBoundingCoordinate>-106.5903632</eastBoundingCoordinate>
+          <northBoundingCoordinate>32.68957116</northBoundingCoordinate>
+          <southBoundingCoordinate>32.53118449</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>Bounding box C</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-106.8514602</westBoundingCoordinate>
+          <eastBoundingCoordinate>-106.7294433</eastBoundingCoordinate>
+          <northBoundingCoordinate>32.5427713</northBoundingCoordinate>
+          <southBoundingCoordinate>32.46722784</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <temporalCoverage>
+        <rangeOfDates>
+          <beginDate>
+            <calendarDate>2008-06-02</calendarDate>
+          </beginDate>
+          <endDate>
+            <calendarDate>2016-06-06</calendarDate>
+          </endDate>
+        </rangeOfDates>
+      </temporalCoverage>
+    </coverage>
+    <maintenance>
+      <description>completed</description>
+    </maintenance>
+    <contact>
+      <organizationName>JRN LTER</organizationName>
+      <positionName>Data Manager</positionName>
+      <electronicMailAddress>datamanager.jrn.lter@gmail.com</electronicMailAddress>
+    </contact>
+    <methods>
+      <methodStep>
+        <description>
+          <para>
+  These are the example methods. They may contain “quotes”…
+</para>
+          <para>
+  Paragraph breaks
+</para>
+          <para>
+  And other “complex” formatting.
+</para>
+          <para>
+  1. Like
+</para>
+          <para>
+  2. Bulleted
+</para>
+          <para>
+  3. Lists
+</para>
+          <para>
+       
+</para>
+          <para>
+  * Or crude simulations of
+</para>
+          <para>
+      * lists like this
+</para>
+          <para>
+  * one
+</para>
+          <para>
+  This formatting works best if the methods are in a .docx template.
+</para>
+        </description>
+      </methodStep>
+    </methods>
+    <dataTable>
+      <entityName>A subset of columns from R's mtcars dataset</entityName>
+      <entityDescription>A subset of columns from R's mtcars dataset</entityDescription>
+      <physical>
+        <objectName>mtcars.csv</objectName>
+        <size unit="bytes">958</size>
+        <authentication method="MD5">aefc8909d7c60f6ed4ed5d2fe2543c82</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>type</attributeName>
+          <attributeDefinition>Make and model of vehicle</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Make and model of vehicle</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>Missing value</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>mpg</attributeName>
+          <attributeDefinition>Miles per gallon. Probably should define custom unit here.</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">10.4</minimum>
+                  <maximum exclusive="false">33.9</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>Missing value</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>wt</attributeName>
+          <attributeDefinition>Weight of vehicle</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>ton</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">1.51</minimum>
+                  <maximum exclusive="false">5.42</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>Missing value</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>cyl</attributeName>
+          <attributeDefinition>Number of cylinders. Assigned as a categorical for testing.</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>4</code>
+                    <definition>4 cylinder engine</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>6</code>
+                    <definition>6 cylinder engine</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>8</code>
+                    <definition>8 cylinder engine</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>Missing value</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>gear</attributeName>
+          <attributeDefinition>Number of gears</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>natural</numberType>
+                <bounds>
+                  <minimum exclusive="false">3</minimum>
+                  <maximum exclusive="false">5</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>Missing value</codeExplanation>
+          </missingValueCode>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>32</numberOfRecords>
+    </dataTable>
+  </dataset>
+</eml:eml>
