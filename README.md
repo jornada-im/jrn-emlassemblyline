@@ -1,10 +1,10 @@
 # jrn_emlassembyline
 
-Script examples, metadata templates, and troubleshooting tests for using [EML_assemblyline](https://github.com/EDIorg/emlAssemblyLine) to package Jornada research data.
+This repository contains script examples, metadata templates, and troubleshooting tests for using [EML_assemblyline](https://github.com/EDIorg/emlAssemblyLine) to package Jornada research data. This is all a work in progress - most useful for the Jornada LTER IM team as we develop new metadata generation methods.
 
-## examples/
+## pkg210000000_example/
 
-A data package directory set up for EMLassemblyline scripts. A variety of these scripts are present to illustrate different mays to build EML files and interact with EDI. Some scripts use the EML or EDI_utils packages.
+A data package directory set up to test EMLassemblyline scripts. It contains metadata templates in various formats, a dataset (mtcars), and a build script (possibly more to come). The directory is set up to illustrate a useful workflow and the build script is well commented to teach the user how EML files are build with EMLassemblyline.  
 
 ## \*_test/
 
