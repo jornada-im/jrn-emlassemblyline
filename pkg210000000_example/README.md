@@ -31,16 +31,21 @@ They are:
 * Maybe we'll add others for testing someday
 
 
-## Steps to create metadata file
+## Steps to create metadata (EML) file
 
-If you are updating the metadata only:
+**If updating and publishing new data (and metadata):**
+
+  1. Download and open the latest dataset (in this case it doesn't matter, `mtcars` is built into R).
+  2. Make any data file changes necessary with R in the `build_210000000.R` script (again, not really needed here)
+  3. Increment `package.id` version number in build_210000000.R (`make_eml()` call)
+  4. Increment the `temporal.coverage` array in build_210000000.R (`make_eml()` call)
+  5. Update metadata templates
+  6. Run the build_210000000.R script in R.
+  7. Publish to EDI staging server
+
+**If you are updating the package metadata only:**
 
   1. Edit the metadata templates in `./metadata_templates`
-  2. Run the build script in R (build_210000000.R or others)
-
-If publishing a new version of the package to the EDI staging server:
-
-  1. Edit the metadata templates in './metadata_templates'
-  2. Increment the `package.id` version number in the `revision` addignment of the build script.
-  3. Run the build script in R.
-  4. Publish to EDI staging server
+  2. Increment `package.id` version number in build_210000000.R (`make_eml()` call)
+  3. Run the build_210000000.R script in R (careful not to regenerate blank templates)
+  4. Publish to EDI or EDI Staging ("Evaluate/Upload Data Packages" tool)

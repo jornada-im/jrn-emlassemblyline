@@ -19,7 +19,7 @@ library(tidyverse)
 
 mtpath <- "./metadata_templates"
 datasettitle <- "Example data package for testing emlassemblyline (mtcars)"
-dpath <- "./data_objects"
+dpath <- "./data_entities"
 datafiles <- c("mtcars.csv")
 emlpath <- "./eml"
 revision <- 8 # User should increment by 1 if uploading to EDI staging.
