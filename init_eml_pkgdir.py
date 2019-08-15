@@ -48,13 +48,32 @@ if not os.path.exists(os.path.join(newdir, 'metadata_templates')):
 
 from shutil import copyfile
 
-copyfile('./pkg210000000_template/README.md', 
-    os.path.join(newdir, 'README.md'))
-copyfile('./pkg210000000_template/build_210000000.R', 
-    os.path.join(newdir, 'build_{0}.R'.format(pkgID)))
+readme_fname =  os.path.join(newdir, 'README.md')
+copyfile('./pkg210000000_template/README.md', readme_fname)
+
+build_fname = os.path.join(newdir, 'build_{0}.R'.format(pkgID))
+copyfile('./pkg210000000_template/build_210000000.R', build_fname)
+
 copyfile('./pkg210000000_template/metadata_templates/intellectual_rights.txt',
     os.path.join(newdir, 'metadata_templates', 'intellectual_rights.txt'))
 
+# Replace package id in README:
+with open(readme_fname, 'r') as file:
+    filedata = file.read()
+
+filedata = filedata.replace('210000000', pkgID)
+
+with open(readme_fname, 'w') as file:
+    file.write(filedata)
+
+# Replace package id in build script:
+with open(build_fname, 'r') as file:
+    filedata = file.read()
+
+filedata = filedata.replace('210000000', pkgID)
+
+with open(build_fname, 'w') as file:
+    file.write(filedata)
 
 
 # Get info about the eml and data in the package
