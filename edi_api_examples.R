@@ -8,11 +8,11 @@
 #EML::write_eml(emlout, paste0(emlpath, '/', emlout$packageId, '.xml'))
 
 url <- paste0(
-  'https://pasta.lternet.edu/package/metadata/eml/knb-lter-jrn/210000000/',
+  'https://pasta.lternet.edu/package/metadata/eml/knb-lter-jrn/210308004/',
   suppressMessages(
     api_list_data_package_revisions(
       scope = 'knb-lter-jrn', 
-      '210000000', 
+      '210308004', 
       filter = 'newest',
       environment = 'production'
     )
