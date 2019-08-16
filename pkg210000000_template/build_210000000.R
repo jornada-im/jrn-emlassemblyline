@@ -28,8 +28,8 @@ setwd('~/GitHub/jrn_emlassemblyline/pkg210000000_example/')
 library('EMLassemblyline')
 library(tidyverse)
 
-mtpath <- "./metadata_templates"
 datasettitle <- "Example data package for testing emlassemblyline (mtcars)"
+mtpath <- "./metadata_templates"
 dpath <- "./data_entities"
 datafiles <- c("mtcars.csv")
 emlpath <- "./eml"
