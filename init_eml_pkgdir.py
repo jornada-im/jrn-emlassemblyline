@@ -94,7 +94,7 @@ pkg_EDInewrev = response.text
 # This is the current EML from EDI, fetch and print to file
 response = requests.get('https://pasta.lternet.edu/package/metadata/eml/{0}/{1}/newest'.format(pkg_scope, pkgID))
 fname_EDIxml = os.path.join(newdir, 
-    '{0}.{1}_EDI.xml'.format(pkgID, pkg_EDInewrev))
+    '{0}.{1}.{2}_EDI.xml'.format(pkg_scope, pkgID, pkg_EDInewrev))
 # This doesn't seem to work well (namespace problem, registering may help)
 #ET.register_namespace('', "http://ecoinformatics.org/eml-2.1.1")
 #ET.register_namespace('', "http://www.topografix.com/GPX/1/0")
