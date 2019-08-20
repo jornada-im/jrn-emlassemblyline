@@ -112,10 +112,11 @@ emlout <- make_eml(path = mtpath,
                    package.id = paste0("knb-lter-jrn.210000000.", revision),
                    return.obj = T) # Returns eml as a named list (for editing)
 
-# PLEASE READ: there is still invalid EML produced if there are quotes in
-# text templates document (a bug?). So, <quote> tags need to be edited out 
-# in Oxygen. This would occur if using quoted text in methods, abstract, or
-# other text templates **in .txt file formats**.
+# PLEASE READ: Sometimes there is still invalid EML produced if there are
+# quotes in text templates document (a bug?). If EMLassemblyline says the
+# EML did not pass validation, this may be the problem. To fix, <quote> tags 
+# need to be edited out  in Oxygen. This issue would occur if using quoted 
+# text in methods, abstract, or other text templates **in .txt file formats**.
 
 # You can escape (\") or remove the quotes in the plain text templates before 
 # generating the eml to avoid the error - whichever is easier.
