@@ -1,8 +1,9 @@
 # build_210000000.R
 # 
-# REMOVE for packages other than 210000000 >>>>>>>>>>>>>>>>>>>>>
+# REMOVE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # [This is a template build script for running EML assembly line to create a
-# data package for EDI. The example data package is # 210000000.]
+# data package for EDI. You can safely remove this section for packages 
+# other than the template package (all zeros)]
 # <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 #
 # After creating the EML with this script, the EML file and data entities
@@ -22,7 +23,7 @@
 # setwd('Z:\\DataProducts\LTER_IM....
 # !!!!!!!!!
 
-# After cloning the template to your "GitHub" folder (home directory), do:
+# Set the working directory here (could be a local or network share path):
 setwd('~/GitHub/jrn_emlassemblyline/pkg210000000_template/')
 
 library('EMLassemblyline')
@@ -94,7 +95,8 @@ template_geographic_coverage(path=mtpath, empty=TRUE)
 
 # Autogenerate the temporal coverage element if requested
 if(temp_cov == "auto") {
-    temp_cov <- c(min(df.export$date), max(df.export$date))
+    temp_cov <- c(min(df.export$date, na.rm=T), 
+                  max(df.export$date, na.rm=T))
 }
 
 # Make the EML file - some metadata elements are filled in here, along with the
@@ -115,7 +117,7 @@ emlout <- make_eml(path = mtpath,
 # PLEASE READ: Sometimes there is still invalid EML produced if there are
 # quotes in text templates document (a bug?). If EMLassemblyline says the
 # EML did not pass validation, this may be the problem. To fix, <quote> tags 
-# need to be edited out  in Oxygen. This issue would occur if using quoted 
+# need to be edited out in Oxygen. This issue would occur if using quoted 
 # text in methods, abstract, or other text templates **in .txt file formats**.
 
 # You can escape (\") or remove the quotes in the plain text templates before 
