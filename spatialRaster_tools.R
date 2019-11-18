@@ -1,5 +1,5 @@
-library(raster)
-library(tools)
+library(raster)# Work with rasters
+library(tools) # MD5sum function
 #library(EML)
 
 # Documentation for spatialRaster entities at knb:
@@ -104,7 +104,7 @@ build_spatialRaster <- function(rasterFname,        # Filename (local path)
   # set authentication (md5)---------------------------------------------------
   print('Calculating MD5 sum...')
   fileAuthentication <- EML::eml$authentication(method = "MD5")
-  #fileAuthentication$authentication <- md5sum(rasterFname)
+  fileAuthentication$authentication <- md5sum(rasterFname)
   
   
   # set file size--------------------------------------------------------------
