@@ -58,7 +58,10 @@ cars$type <- row.names(cars)
 df.export <- cars %>%
   dplyr::select(type, mpg, wt, cyl, gear)
 
-write_csv(df.export, paste0(dpath, '/', datafiles[1]))
+# Export df.export as a csv to 'pathname'
+options(scipen=999)   # turns of scientific notation
+write.csv(df.export, paste0(dpath, '/', datafiles[1]), quote=F, row.names=F)
+#write_csv(df.export, paste0(dpath, '/', datafiles[1]))
 
 # Import the metadata from the template files. If there are no template files
 # empty ones will be created where specified
