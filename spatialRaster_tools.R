@@ -44,7 +44,8 @@ build_spatialRaster <- function(rasterFname,        # Filename (local path)
   
   # Determine coverage (bbox) of raster ---------------------------------------
   
-  # For EML, this apparently needs to be in decimal degrees, so reproject
+  # For EML, this apparently needs to be in decimal degrees, so convert
+  # to SpatialPolygons and then reproject with spTransform
   extent <- as(raster::extent(rasterObject), "SpatialPolygons")
   sp::proj4string(extent) <- proj4str
   extent.geo <- sp::spTransform(extent, CRS("+proj=longlat +datum=WGS84 +no_defs 
