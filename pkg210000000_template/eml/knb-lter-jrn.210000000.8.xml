@@ -11,7 +11,7 @@
     </allow>
   </access>
   <dataset>
-    <title>Example data package for testing emlassemblyline (mtcars)</title>
+    <title>My Microbial data</title>
     <creator>
       <individualName>
         <givenName>Scooter</givenName>
@@ -21,7 +21,7 @@
       <organizationName>UCLC</organizationName>
       <userId directory="https://orcid.org">https://orcid.org/0000-0002-0484-3537</userId>
     </creator>
-    <pubDate>2019-06-26</pubDate>
+    <pubDate>2019-08-05</pubDate>
     <abstract>
       <para>
   This is an example abstract. It is very short.
@@ -51,24 +51,24 @@
       <para>
   This information is released under the Creative Commons license -
   Attribution - CC BY (https://creativecommons.org/licenses/by/4.0/).
-  The consumer of these data ("Data User" herein) is
-  required to cite it appropriately in any publication that results from
-  its use. The Data User should realize that these data may be actively
-  used by others for ongoing research and that coordination may be
-  necessary to prevent duplicate publication. The Data User is urged to
-  contact the authors of these data if any questions about methodology
-  or results occur. Where appropriate, the Data User is encouraged to
-  consider collaboration or co-authorship with the authors. The Data
-  User should realize that misinterpretation of data may occur if used
-  out of context of the original study. While substantial efforts are
-  made to ensure the accuracy of data and associated documentation,
-  complete accuracy of data sets cannot be guaranteed. All data are made
-  available "as is". The Data User should be aware,
-  however, that data are updated periodically and it is the
-  responsibility of the Data User to check for new versions of the data.
-  The data authors and the repository where these data were obtained
-  shall not be liable for damages resulting from any use or
-  misinterpretation of the data. Thank you.
+  The consumer of these data ("Data User" herein) is required
+  to cite it appropriately in any publication that results from its use.
+  The Data User should realize that these data may be actively used by
+  others for ongoing research and that coordination may be necessary to
+  prevent duplicate publication. The Data User is urged to contact the
+  authors of these data if any questions about methodology or results
+  occur. Where appropriate, the Data User is encouraged to consider
+  collaboration or co-authorship with the authors. The Data User should
+  realize that misinterpretation of data may occur if used out of
+  context of the original study. While substantial efforts are made to
+  ensure the accuracy of data and associated documentation, complete
+  accuracy of data sets cannot be guaranteed. All data are made
+  available "as is." The Data User should be aware, however,
+  that data are updated periodically and it is the responsibility of the
+  Data User to check for new versions of the data. The data authors and
+  the repository where these data were obtained shall not be liable for
+  damages resulting from any use or misinterpretation of the data. Thank
+  you.
 </para>
     </intellectualRights>
     <coverage>
@@ -162,12 +162,12 @@
       <entityDescription>A subset of columns from R's mtcars dataset</entityDescription>
       <physical>
         <objectName>mtcars.csv</objectName>
-        <size unit="bytes">958</size>
-        <authentication method="MD5">aefc8909d7c60f6ed4ed5d2fe2543c82</authentication>
+        <size unit="bytes">991</size>
+        <authentication method="MD5">9ca12e1a8a034d768dd3649cfab9eabe</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
-            <recordDelimiter>\n</recordDelimiter>
+            <recordDelimiter>\r\n</recordDelimiter>
             <attributeOrientation>column</attributeOrientation>
             <simpleDelimited>
               <fieldDelimiter>,</fieldDelimiter>
