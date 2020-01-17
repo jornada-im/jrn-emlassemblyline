@@ -58,6 +58,25 @@ cars$type <- row.names(cars)
 df.export <- cars %>%
   dplyr::select(type, mpg, wt, cyl, gear)
 
+# In more complex cases with a csv you may want to assign data type
+#df_in <- read_csv('Tromble_Weir_Precip_data_EDI.csv',
+#                  col_types = cols(Year = col_character(),
+#                                   Month = col_character(),
+#                                   Day = col_character(),
+#                                   Hour = col_character(),
+#                                   Minute = col_character(),
+#                                   Second = col_character()))
+
+# Mutating columns is good sometimes also
+#df.export <- df_in %>%
+#  mutate(date = as.Date(paste(Year,Month,Day,Hour,Minute,Second, sep='-'),
+#                        format="%Y-%m-%d-%H-%M-%S")) %>%
+#  select(date, R_tower, R2, R3, R4)
+
+# Check for NAs and unique values of catvars
+sapply(df.export, function(x) sum(is.na(x)))
+unique(df.export$type)
+
 # Export df.export as a csv to 'pathname'
 options(scipen=999)   # turns of scientific notation
 write.csv(df.export, paste0(dpath, '/', datafiles[1]), quote=F, row.names=F)
