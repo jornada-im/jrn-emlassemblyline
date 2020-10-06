@@ -25,6 +25,9 @@
 
 # Set the working directory here (could be a local or network share path):
 setwd('/Volumes/DataProducts/LTER_IM/210000000_template/')
+# If in rstudio this will set the working directory to the dir containing
+# the build script
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
 library('EMLassemblyline')
 library(tidyverse)
