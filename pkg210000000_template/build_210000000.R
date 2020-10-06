@@ -41,7 +41,7 @@ datafile_names <- c("Subsetted data") # Name of data entity
 datafile_desc <- c("Subset of columns from R mtcars dataset") # Longer desc
 mtpath <- "./metadata_templates"  # Path to metadata templates
 dpath <- "./data_entities"        # Path to data entities
-data_url <- 'https://storage.googleapis.com/jrn-data-entities/' # A publicly accessible URL to the data
+data_url <- 'https://storage.googleapis.com/jrn-data-entities' # A publicly accessible URL to the data
 emlpath <- "./eml"                # Path to output eml to
 
 # Describe the maintenance, and temporal  coverage. 
@@ -145,7 +145,9 @@ emlout <- make_eml(path = mtpath,
                    eml.path = emlpath,
                    temporal.coverage = temp_cov,
                    maintenance.description = maintenance_desc,
-                   #data.url = data_url,
+                   #data.url = data_url, #this works the best
+                   #data.table.url = data_url,
+                   #other.entity.url = c(data_url),
                    user.id = "JRN",
                    user.domain = "LTER",
                    package.id = paste0("knb-lter-jrn.210000000.", revision),
