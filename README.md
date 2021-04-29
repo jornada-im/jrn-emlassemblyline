@@ -1,4 +1,4 @@
-# jrn_emlassembyline
+# jrn-emlassembyline
 
 This repository contains script examples, metadata templates, and troubleshooting tests for using [EML_assemblyline](https://github.com/EDIorg/emlAssemblyLine) to package Jornada research data. This is all a work in progress - most useful for the Jornada LTER IM team as we develop new metadata generation methods.
 
