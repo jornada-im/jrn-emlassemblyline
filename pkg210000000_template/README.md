@@ -4,7 +4,7 @@
 
 ## Description
 
-This is the Jornada-IM example dataset for use with EMLassemblyline. Data and metadata files here can be used as a template for new datasets and are commonly used to test data management workflows and code.
+This is the Jornada-IM example dataset for use with the R package [EMLassemblyline](https://ediorg.github.io/EMLassemblyline/) (or `EAL`). Data and metadata files here can be used as a template for new datasets and are commonly used to test data management workflows and code.
 
 (When using this README file as a template replace any text with your own.)
 
@@ -13,7 +13,7 @@ This is the Jornada-IM example dataset for use with EMLassemblyline. Data and me
 (Describe the sources of the metadata in this package. What EML files were
 on EDI and the website? What other JRN files were used? Who updates? Etc.)
 
-Metadata templates for EMLassemblyline are stored in `metadata_templates/`. These files are created according to the requirements and examples specified in the directions for EMLassemblyline. See here:
+Metadata templates for `EAL` are stored in `metadata_templates/`. These files are created according to the requirements and examples specified in the directions for `EAL`. See here:
 
 <https://ediorg.github.io/EMLassemblyline/articles/overview.html>
 
@@ -34,9 +34,9 @@ documents, non-tabular data files, etc.)
 
 ## Build scripts
 
-The build scripts here call EMLassemblyline (and related R packages) to prepare the data and metadata for publication. Once complete, the dataset may be published manually using the [EDI portal](https://portal-s.edirepository.org). Metadata such as the title and entity descriptions are also in these build scripts.
+The build scripts here call `EAL` (and related R packages) to prepare the data and metadata for publication. Once complete, the resulting EML and data entities may be published manually using the [EDI portal](https://portal-s.edirepository.org). Metadata such as the title and entity descriptions are also in these build scripts.
 
-* build_210000000.R - Basic build script that modifies data and writes EML 
+* `build_210000000.R` - Basic build script that modifies data and writes EML 
 
 
 ## How to make EML and publish the dataset
